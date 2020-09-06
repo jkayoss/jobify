@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 * {
-    font-family: 'Merriweather', serif;
+    font-family: 'Hind', sans-serif;
     padding: 0;
     border: 0;
+}
+
+body {
     background-color: #eee;
 }
 
 .vagas {
     border-bottom: 4px solid black;
     padding-bottom: 12px;
+    font-weight: 600;
 }
 .container {
     padding-top: 10px;
@@ -65,4 +69,26 @@ button {
 label {
     display: block;
     margin-top: 5px;
+}
+
+.card,
+.card h3,
+.card li,
+.card a,
+.card h4 {
+    background-color: #ddd;
+    color: #333!important;
+    border-radius: 10px;
+} .card h3 {
+    padding: 0px 10px;
+    margin-top: 10px;
+} .card li {
+    padding-left: 10px;
+} .card {
+    border: 1px solid #aaa;
+    border-bottom: 2px solid #aaa;
+    margin: 8px 0;
+} .card h4,
+.card p {
+    margin: 10px;
 }

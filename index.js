@@ -55,6 +55,12 @@ app.get('/admin/vagas', async(req, res) => {
     res.render('admin/vagas', {vagas})
 })
 
+app.get('/admin/categorias', async(req, res) => {
+    const db = await dbConnection
+    const categorias = await db.all('select * from categorias;')
+    res.render('admin/cat', {categorias})
+})
+
 app.get('/admin/vagas/delete/:id', async(req, res) => {
     const db = await dbConnection
     await db.run('delete from vagas where id ='+req.params.id)
