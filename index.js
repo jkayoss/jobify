@@ -18,7 +18,7 @@ app.get('/admin', (req, res, next) => {
     if(req.hostname === 'localhost') {
         next()
     } else {
-        res.render('Você não tem permissão para fazer isso :)')
+        res.send('Você não tem permissão para fazer isso :)')
     }
 })
 
