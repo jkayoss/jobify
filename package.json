@@ -4,7 +4,7 @@
   "description": "Jobify is a job board that can be used by companies for sharing oportunities.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "jobify",
